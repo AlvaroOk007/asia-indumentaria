@@ -67,7 +67,7 @@ a{
 }
 /*Estilos de divisor*/
 .divisor{
-    width: 90%;
+    width: 100%;
     height: 1px;
     background-color: rgb(189, 189, 189);
 }
@@ -75,5 +75,91 @@ a{
 .main-pagina-principal{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    gap: 20px;
+}
+/*Estilos para las secciones*/
+.silver-coleccion{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.title-section{
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Estilos para las tarjetas*/
+
+.contenedor-tarjeta{
+    width: 300px;
+    position: relative;
+    height: 500px;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contenedor-imagen-tarjeta{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(0, 119, 255);
+    overflow: hidden;
+    & img{
+        width: 100%;
+        transition: all .2s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.contenedor-descripcion-tarjeta{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title-tarjeta{
+    font-size: 14px;
+    font-weight: 600;
+}
+.decripcion-tarjeta{
+    font-size: 13px;
+}
+.cuotas-tarjetas{
+    font-size: 12px;
+}
+
+.contenedor-btns-tarjeta{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.btn-tarjeta-comprar{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    width: 100px;
+    &:hover{
+        background-color: rgb(15, 15, 15);
+    }
+}
+.btn-tarjeta-info{
+    text-align: center;
+    width: 100px;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    &:hover{
+        background-color: rgb(3, 36, 18);
+    }
 }
