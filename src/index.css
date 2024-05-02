@@ -50,3 +50,30 @@ a{
         background-color: rgb(12, 12, 12);
     }
 }
+/*Estilos para icono de iniciar Sesion*/
+
+/*Estilos para el carrito de compras*/
+.icon-trolley{
+    position: relative;
+}
+.trolley-contador{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:#ff6600 ;
+    padding: 2px;
+    font-weight: 500;
+    font-size: 10px;
+}
+/*Estilos de divisor*/
+.divisor{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(189, 189, 189);
+}
+/*Estilos del main principal*/
+.main-pagina-principal{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
