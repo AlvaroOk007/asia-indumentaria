@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 a{
     text-decoration: none;
@@ -16,29 +16,30 @@ a{
     overflow-x: hidden;
     width: 100%;
     gap: 100px;
-    white-space: nowrap;  
     background-color: black;
-    transition: all .3s;
 }
 .texto-en-movimiento{
     color: white;
     animation: scroll 20s linear infinite;
-    width: 1000px;
     font-size: 12px;
 }
-@keyframes scroll {
+
+@keyframes scroll { 
     0%{
         transform: translateX(-100%);/*Posicion Inicial*/
     }
     100%{
-        transform: translateX(200%);/*Posicion Final*/
+        transform: translateX(250%);/*Posicion Final*/
     }
 }
 /*Estilos de mi encabezado*/
-
+.contenedor-encabezado-nav{
+    background-color: black;
+}
 .contenedor-encabezado{
     background-color: rgb(0, 0, 0);
     display: flex;
+    height: auto;
     justify-content: space-between;
     padding: 0 10px;
     align-items: center;
@@ -75,7 +76,7 @@ a{
     font-size: 28px;
     transition: all .2s;
     &:hover{
-        font-weight: 200;
+        font-weight: 500;
         background-color: rgb(12, 12, 12);
     }
 }
@@ -94,9 +95,64 @@ a{
     font-weight: 500;
     font-size: 10px;
 }
+/*Estilos de campo de busqueda*/
+.contenedor-busqueda{
+    display: none;
+    width: 40%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    gap: 20px;
+    & #btn-cerrar-search{
+        margin-left: 10px;
+        margin-top: 10px;
+        color: black;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+
+        }
+    }
+    & .campo-busqueda{
+        padding: 0 10px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        & input{
+            font-family: "Montserrat";
+            height: 35px;
+            width: 100%;
+            padding: 0 10px;
+            border: 1px solid rgb(187, 187, 187);
+            &:hover{
+                border: 1px solid rgb(134, 134, 134)
+            }
+            &:focus{
+                outline: none;
+                border: 1px solid rgb(99, 99, 99)
+            }
+        }
+        & span{
+            position: absolute;
+            right: 10px;
+            color: rgb(187, 187, 187);
+            transition: color .2s;
+            cursor: pointer;
+            &:hover{
+                color: rgb(75, 75, 75);
+            }
+        }
+        
+
+    }
+}
 /*Estilos nav slider principal*/
 .nav-slider-principal{
-    display: none;
     position: fixed;
     width: 40%;
     background-color: rgba(0, 0, 0, 0.884);
@@ -105,7 +161,7 @@ a{
     height: 100%;
     z-index: 2;
     justify-content:left;
-    align-items: flex-start;
+    align-items: flex-start;   
     & ul{
         margin-top: 100px;
         list-style: none;
@@ -132,11 +188,24 @@ a{
 .icon-hamburguesa{
     z-index: 4;
 }
-.posicionar-menu-hamburguesa{
+.fijar{
     position: fixed;
 }
+.ocultar-menu{    
+    display: none;
+}
 .posicionar-menu{
-    display: block;
+    animation: desplegar-x .4s linear;
+    display: flex;
+}
+
+@keyframes desplegar-x{
+    0%{
+        transform:translateX(-100%) ;
+    }
+    100%{
+        transform:translateX()
+    }
 }
 /*Estilos de nav slide secundario*/
 .nav-encabezado{
@@ -159,6 +228,7 @@ a{
 }
 
 .nav-encabezado-list{
+    overflow: hidden;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -183,6 +253,7 @@ a{
         text-decoration: underline;
     }
 }
+
 /*Estilos de divisor*/
 .divisor{
     margin: 20px 0;
