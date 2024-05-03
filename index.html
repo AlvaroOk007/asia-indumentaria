@@ -8,36 +8,65 @@
     <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
-    <header class="contenedor-encabezado">
-        <div class="icons-left">
-            <a class="material-symbols-outlined icon-encabezado">
-                menu
-            </a>
-            <a class="material-symbols-outlined icon-encabezado">
-                search
-            </a>
+    <div class="contenedor-texto-en-movimiento">
+        <p class="texto-en-movimiento">10% ABONANDO CON TRANSFERENCIA | ENVIO GRATIS SUPERANDO LOS $100.000 | 30% ABONANDO EN EFCTIVO  </p>
+    </div>
+    <header class="contenedor-encabezado-nav">
+        <nav class="nav-slider-principal" id="navegador-principal">
+            <ul>
+                <li><a href="">Nuevos Ingresos</a></li>
+                <li><a href="">Accesorios</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Feria Online</a></li>
+            </ul>
+        </nav>
+        <div class="contenedor-encabezado">
+            <div class="icons-left">
+                <a class="material-symbols-outlined icon-encabezado icon-hamburguesa " id="menu-hamburguesa">
+                    menu
+                </a>
+                <a class="material-symbols-outlined icon-encabezado">
+                    search
+                </a>
 
+            </div>
+            <div class="contenedor-logo-center">
+                <a href="index.html">
+                    <h4>Asia</h4>
+                    <span>Indumentaria</span>
+                </a>
+            </div>
+            <div class="icons-right">
+                <a class="material-symbols-outlined icon-encabezado icon-iniciar-sesion"    href="/pages/login.html">
+                    person
+                </a>
+                <a class="material-symbols-outlined icon-encabezado icon-trolley">
+                    trolley
+                    <span class="trolley-contador" id = "trolley-contador">3</span>
+                </a>
+            </div>
         </div>
-        <div class="contenedor-logo-center">
-            <a href="index.html">
-                <h4>Asia</h4>
-                <span>Indumentaria</span>
-            </a>
-        </div>
-        <div class="icons-right">
-            <a class="material-symbols-outlined icon-encabezado icon-iniciar-sesion"    href="/pages/login.html">
-                person
-            </a>
-            <a class="material-symbols-outlined icon-encabezado icon-trolley">
-                trolley
-                <span class="trolley-contador" id = "trolley-contador">3</span>
-            </a>
-        </div>
+        <nav class="nav-encabezado">
+            <span class="material-symbols-outlined icon-nav-encabezado" id="btn-desplegar">
+                expand_more
+            </span>
+            <ul class="nav-encabezado-list" id="nav-a-mostrar">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Información</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Medidas</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="main-pagina-principal">
-        <div class="divisor"></div>
         <h2 class="title-section">NUEVA COLECCION SILVER</h2>
         <section class="silver-coleccion">
+            <span class="material-symbols-outlined btn-izquierda btn-desplazar">
+                chevron_left
+            </span>
+            <span class="material-symbols-outlined btn-derecha btn-desplazar">
+                chevron_right
+            </span>
             <article class="contenedor-tarjeta">
                 <div class="contenedor-imagen-tarjeta">
                     <img src="/src/imgs/image-1.webp" alt="">
@@ -49,7 +78,7 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
             <article class="contenedor-tarjeta">
@@ -63,7 +92,7 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
             <article class="contenedor-tarjeta">
@@ -77,7 +106,7 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
             <article class="contenedor-tarjeta">
@@ -91,7 +120,7 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
             <article class="contenedor-tarjeta">
@@ -105,7 +134,7 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
             <article class="contenedor-tarjeta">
@@ -119,10 +148,42 @@
                 </div>
                 <div class="contenedor-btns-tarjeta">
                     <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                    <a href=""class="btn-tarjeta-info">info</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
                 </div>
             </article>
+            <article class="contenedor-tarjeta">
+                <div class="contenedor-imagen-tarjeta">
+                    <img src="/src/imgs/image-1.webp" alt="">
+                </div>
+                <div class="contenedor-descripcion-tarjeta">
+                    <h2 class="title-tarjeta">Remera 1</h2>
+                    <p class="decripcion-tarjeta">Descripcion de la tarjeta 1</p>
+                    <span class="cuotas-tarjetas">6 cuotas sin interés</span>
+                </div>
+                <div class="contenedor-btns-tarjeta">
+                    <a href="" class="btn-tarjeta-comprar">Comprar</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
+                </div>
+            </article>
+            <article class="contenedor-tarjeta">
+                <div class="contenedor-imagen-tarjeta">
+                    <img src="/src/imgs/image-1.webp" alt="">
+                </div>
+                <div class="contenedor-descripcion-tarjeta">
+                    <h2 class="title-tarjeta">Remera 1</h2>
+                    <p class="decripcion-tarjeta">Descripcion de la tarjeta 1</p>
+                    <span class="cuotas-tarjetas">6 cuotas sin interés</span>
+                </div>
+                <div class="contenedor-btns-tarjeta">
+                    <a href="" class="btn-tarjeta-comprar">Comprar</a>
+                    <a href="" class="btn-ver-mas">Ver Mas</a>
+                </div>
+            </article>
+            
         </section>
+        <div class="divisor"></div>
     </main>
+
+    <script src="/src/scripts/main.js"></script>
 </body>
 </html>
