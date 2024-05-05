@@ -151,6 +151,8 @@ a{
 
     }
 }
+
+
 /*Estilos nav slider principal*/
 .nav-slider-principal{
     position: fixed;
@@ -207,7 +209,9 @@ a{
         transform:translateX()
     }
 }
+
 /*Estilos de nav slide secundario*/
+
 .nav-encabezado{
     display: flex;
     flex-direction: column;

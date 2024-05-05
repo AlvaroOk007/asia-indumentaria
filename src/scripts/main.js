@@ -1,9 +1,5 @@
 const btnParaMostrar = document.getElementById("btn-desplegar")
 let contenidoMostrar = document.getElementById("nav-a-mostrar")
-// btnParaMostrar.addEventListener("click",()=>{
-//     contenidoMostrar.classList.toggle("mostrar")
-// })
-
 let estaMostrando = false
 btnParaMostrar.addEventListener("click",()=>{
     if (estaMostrando){
@@ -50,3 +46,5 @@ btnCerrar.addEventListener("click",()=>{
     menuBusqueda.classList.add("ocultar-menu")
     mostrandoMenuBusqueda = false
 })
+
+
