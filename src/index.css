@@ -10,6 +10,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-image: url(https://media.istockphoto.com/id/836965294/es/foto/fondos-con-textura-de-tela-de-lino.jpg?s=612x612&w=0&k=20&c=qm7oTsge8G8LzBR1MlPLIc0F0iL4i2Wd0MqVyjfs92g=);
+    top: 0;
+}
 /*Estilos de texto en movimiento*/
 .contenedor-texto-en-movimiento{
     display: flex;
@@ -272,9 +276,6 @@ a{
     flex-direction: column;
     margin: 20px 20px;
     gap: 20px;
-    background-image: url(https://media.istockphoto.com/id/836965294/es/foto/fondos-con-textura-de-tela-de-lino.jpg?s=612x612&w=0&k=20&c=qm7oTsge8G8LzBR1MlPLIc0F0iL4i2Wd0MqVyjfs92g=);
-    top: 0;
-    z-index: -9999;
 }
 /*Estilos para las secciones*/
 .silver-coleccion{
