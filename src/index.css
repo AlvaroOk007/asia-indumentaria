@@ -354,9 +354,10 @@ body{
 }
 .decripcion-tarjeta{
     font-size: 13px;
-    display: flex;
-    overflow: visible;
-    word-wrap: normal;
+    margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .cuotas-tarjetas{
     font-size: 12px;
