@@ -351,6 +351,7 @@ body{
 .title-tarjeta{
     font-size: 14px;
     font-weight: 600;
+    margin-top: 2px;
 }
 .decripcion-tarjeta{
     font-size: 13px;
@@ -359,8 +360,20 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.oferta_tarjeta{
+    font-size: 11px;
+    text-decoration: line-through;
+    color: darkgrey;
+    position: absolute;
+    top: 82%;
+    left: 26%;
+}
+
 .cuotas-tarjetas{
     font-size: 12px;
+    text-align: right;
+    position: absolute;
+    right: 2%;
 }
 
 .contenedor-btns-tarjeta{
@@ -392,4 +405,18 @@ body{
     &:hover{
         text-decoration: underline;
     }
+}
+
+.subtitle-section{
+    text-align: center;
+    color: white;
+    background: rgb(226, 230, 17);
+    border: 2px solid rgb(85, 68, 85);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.oferta_del_dia{
+    display: flex;
+    justify-content: center;
 }
