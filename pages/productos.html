@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+        <div class="contenedor-texto-en-movimiento">
+            <p class="texto-en-movimiento">10% ABONANDO CON TRANSFERENCIA | ENVIO GRATIS SUPERANDO LOS $100.000 | 30% ABONANDO EN EFECTIVO  </p>
+        </div>
+            <header class="contenedor-encabezado-nav">
+            <nav class="nav-slider-principal ocultar-menu" id="navegador-principal">
+                <ul>
+                    <li><a href="">Nuevos Ingresos</a></li>
+                    <li><a href="">Accesorios</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Feria Online</a></li>
+                </ul>
+            </nav>
+            <div class="contenedor-encabezado">
+                <div class="icons-left">
+                    <span class="material-symbols-outlined icon-encabezado icon-hamburguesa " id="menu-hamburguesa">
+                        menu
+                    </span>
+                    <span id="btn-search" class="material-symbols-outlined icon-encabezado">
+                        search
+                    </span>
+    
+                </div>
+                <div class="contenedor-logo-center" id="logo">
+                    <a href="index.html">
+                        <h4>Asia</h4>
+                        <span>Indumentaria</span>
+                    </a>
+                </div>
+                <div class="icons-right">
+                    <a class="material-symbols-outlined icon-encabezado icon-iniciar-sesion"    href="/pages/login.html">
+                        person
+                    </a>
+                    <a class="material-symbols-outlined icon-encabezado icon-trolley">
+                        trolley
+                        <span class="trolley-contador" id = "trolley-contador">3</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contenedor-busqueda" id="contenedor-busqueda">
+                <span id="btn-cerrar-search"class="material-symbols-outlined">
+                    close
+                </span>
+                <hr>
+                <div class="campo-busqueda">
+                    <input type="text" placeholder="¿Qué estás buscando?">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+            </div>
+            <nav class="nav-encabezado">
+                <span class="material-symbols-outlined icon-nav-encabezado" id="btn-desplegar">
+                    expand_more
+                </span>
+                <ul class="nav-encabezado-list" id="nav-a-mostrar">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./informacion.html">Información</a></li>
+                    <li><a href="contacto.js">Contacto</a></li>
+                    <li><a href="./medidas.html">Medidas</a></li>
+                </ul>
+            </nav>
+        </header>
     
 </body>
+
+<script src="../src/scripts/main.js"></script>
+
 </html>
