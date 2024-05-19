@@ -333,6 +333,7 @@ body{
     & img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
         transition: all .2s;
         &:hover{
             transform: scale(1.05);
@@ -364,9 +365,6 @@ body{
     font-size: 11px;
     text-decoration: line-through;
     color: darkgrey;
-    position: absolute;
-    top: 82%;
-    left: 26%;
 }
 
 .cuotas-tarjetas{
@@ -438,20 +436,11 @@ body{
     background-image: url(/src/imgs/model_sombrero.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-position: center;
     animation-name: change;
     animation-duration: 5s;
     animation-delay: 1s;
     animation-iteration-count:infinite;
-    & img{
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s ease-in-out;
-        &:hover{
-            transform: scale(1.15);
-        }
-    }
-
 }
 
 @keyframes change{
@@ -462,3 +451,22 @@ body{
     100%{background-image: url(/src/imgs/model_with_with_dress.png);}
 }
 
+
+
+/*Nuevo posicionamiento de precio*/
+.contenedor_precio{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contendedor_precio-descuento{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.precio2{
+    color: red;
+    font-size: 10px;
+    text-decoration: line-through;
+}
