@@ -444,14 +444,13 @@ body{
 }
 
 @keyframes change{
-    0%{background-image: url(/src/imgs/model_sombrero.png);}
-    25%{background-image: url(/src/imgs/model_sombrero.png);}
-    50%{background-image: url(/src/imgs/model_with_glasses.png);}
-    75%{background-image: url(/src/imgs/model_with_glasses.png);}
-    100%{background-image: url(/src/imgs/model_with_with_dress.png);}
+    0%{background-image: url(./imgs/model_sombrero.png);}
+    /* 0%{background-image: url(/src/imgs/model_sombrero.png);} */
+    25%{background-image: url(./imgs/model_sombrero.png);}
+    50%{background-image: url(./imgs/model_with_glasses.png);}
+    75%{background-image: url(./imgs/model_with_glasses.png);}
+    100%{background-image: url(./imgs/model_with_with_dress.png);}
 }
-
-
 
 /*Nuevo posicionamiento de precio*/
 .contenedor_precio{
