@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/login.css">
-    <link rel="stylesheet" href="../src/Footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>ASIA Indumentaria - Registro</title>
-    <link rel="icon" href="./../src/imgs/asia.ico">
-    <link rel="stylesheet" href="../src/mediaquery.css">
-    <link rel="stylesheet" href="../src/index.css">
+    <title>Proximamente</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../src/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/Footer.css">
+    <link rel="icon" href="../src/imgs/asia.ico">
+    <link rel="stylesheet" href="../src/mediaquery.css">
 </head>
-<body>
+<body class="prox-body">
     <div class="contenedor-texto-en-movimiento">
         <p class="texto-en-movimiento">10% ABONANDO CON TRANSFERENCIA | ENVIO GRATIS SUPERANDO LOS $100.000 | 30% ABONANDO EN EFECTIVO  </p>
     </div>
     <header class="contenedor-encabezado-nav">
         <nav class="nav-slider-principal ocultar-menu" id="navegador-principal">
             <ul>
-                <li><a href="proximamente.html">Nuevos Ingresos</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="proximamente.html">Feria Online</a></li>
+                <li><a href="./proximamente.html">Nuevos Ingresos</a></li>
+                <li><a href="/pages/ofertas.html">Ofertas</a></li>
+                <li><a href="/pages/productos.html">Productos</a></li>
+                <li><a href="./proximamente.html">Feria Online</a></li>
             </ul>
         </nav>
         <div class="contenedor-encabezado">
@@ -42,12 +42,12 @@
                 </a>
             </div>
             <div class="icons-right">
-                <a class="material-symbols-outlined icon-encabezado icon-iniciar-sesion"    href="login.html">
+                <a class="material-symbols-outlined icon-encabezado icon-iniciar-sesion"    href="./login.html">
                     person
                 </a>
                 <a class="material-symbols-outlined icon-encabezado icon-trolley">
                     trolley
-                    <span class="trolley-contador" id = "trolley-contador">3</span>
+                    <span class="trolley-contador" id = "trolley-contador">0</span>
                 </a>
             </div>
         </div>
@@ -68,100 +68,13 @@
                 expand_more
             </span>
             <ul class="nav-encabezado-list" id="nav-a-mostrar">
-                <li><a href="proximamente.html">Información</a></li>
+                <li><a href="./proximamente.html">Información</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="proximamente.html">Medidas</a></li>
+                <li><a href="./proximamente.html">Medidas</a></li>
             </ul>
         </nav>
     </header>
-
-
-    <main>
-        <form action="" class="formulario" id="formulario">
-            
-			<div class="formulario__grupo" id="grupo__usuario">
-				<label for="usuario" class="formulario__label">Usuario</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Tito25">
-				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
-			</div>
-
-	
-			<div class="formulario__grupo" id="grupo__nombre">
-				<label for="nombre" class="formulario__label">Nombre</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan">
-				</div>
-				<p class="formulario__input-error">El Nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras</p>
-			</div>
-
-		
-			<div class="formulario__grupo" id="grupo__password">
-				<label for="password" class="formulario__label">Contraseña</label>
-				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
-				</div>
-				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-			</div>
-
-			<div class="formulario__grupo" id="grupo__password2">
-				<label for="password2" class="formulario__label">Repetir Contraseña</label>
-				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password2" id="password2">
-				</div>
-				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
-			</div>
-
-			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">Correo Electrónico</label>
-				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-			</div>
-
-			<div class="formulario__grupo" id="grupo__telefono">
-				<label for="telefono" class="formulario__label">Teléfono</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
-					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-				</div>
-			</div>
-
-			<div class="formulario__provincia">
-                <label for="provincia" class="formulario__label">Seleccione Su Provincia</label>
-                <select name="Provincia" id="provincia">
-                    <option value="bs-as">Bs-As</option>
-                    <option value="sgo-ester">Sgo. del Estero</option>
-                    <option value="tucuman">Tucuman</option>
-                    <option value="santafe">Santa Fe</option>
-                </select>
-            </div>
-            <div class="cargar-imagen">
-                <label for="imagen-perfil" class="formulario__label cargar-imagen__label">Cargar Foto de Perfil</label>
-                <input type="file" name = "imagen-perfil" class="cargar-imagen__input" id="imagen-perfil" >
-            </div>
-            <div class="formulario__grupo terminos__" id="grupo__terminos">
-				<label class="formulario__label">
-					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					<p class="terminos">Aceptas recibir nuestro Newsletter por mail?</p>
-				</label>
-			</div>
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
-
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-			</div>
-
-
-		</form>
-	</main>
-
-	    
+    <h1 class="prox-title">PROXIMAMENTE</h1>
     <footer class="footer">
         <div class="container">
             <div class="footer-row">  
@@ -218,7 +131,8 @@
                 <p>Todos los derechos reservados</p>
             </div>
     </footer>
-    <script src="../src/scripts/login.js"></script>
     <script src="../src/scripts/main.js"></script>
+
 </body>
 </html>
+
