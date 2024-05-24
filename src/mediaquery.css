@@ -26,3 +26,27 @@
 
 }
 /*MediaQuerys para modo Celular*/
+@media only screen and (max-width: 400px){
+    header{
+        padding-bottom: 10px;
+    }
+    .nav-encabezado{
+        display: none;
+    }
+        /*Estilos del logo */
+        .contenedor-logo-center{
+            & h4{
+                font-size: 34px;
+            }
+            & span{
+                font-size: 9px;
+            }
+        }
+        /*Estilos de busqueda y menu hamburguesa*/
+        .contenedor-busqueda{
+            width:100%;
+        }
+        .nav-slider-principal{
+            width:100%;
+        }
+}
