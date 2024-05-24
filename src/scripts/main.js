@@ -47,15 +47,6 @@ btnCerrar.addEventListener("click",()=>{
     mostrandoMenuBusqueda = false
 })
 
-function activateAnimation(contenedor_tarjeta_esp) {
-    contenedor_tarjeta_esp.querySelector('.image_animation').classList.add('active');
-    console.log('activateAnimation se ha ejecutado')
-}
-
-function deactivateAnimation(contenedor_tarjeta_esp) {
-    contenedor_tarjeta_esp.querySelector('.image_animation').classList.remove('active');
-    console.log('deactivateAnimation se ha ejecutado')
-}
 
 
 
