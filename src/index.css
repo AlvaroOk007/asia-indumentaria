@@ -467,3 +467,16 @@ body{
     font-size: 10px;
     text-decoration: line-through;
 }
+
+/*Estilos pestaña proximamente*/
+.prox-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+.prox-title{
+    font-size: calc(20px + 2vw);
+    color: black;
+    text-align: center;
+    margin: 30vh 0;
+}
