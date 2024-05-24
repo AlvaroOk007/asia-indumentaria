@@ -9,19 +9,20 @@
     <title>ASIA Indumentaria - Registro</title>
     <link rel="icon" href="./../src/imgs/asia.ico">
     <link rel="stylesheet" href="../src/mediaquery.css">
-
+    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="contenedor-texto-en-movimiento">
         <p class="texto-en-movimiento">10% ABONANDO CON TRANSFERENCIA | ENVIO GRATIS SUPERANDO LOS $100.000 | 30% ABONANDO EN EFECTIVO  </p>
     </div>
-        <header class="contenedor-encabezado-nav">
+    <header class="contenedor-encabezado-nav">
         <nav class="nav-slider-principal ocultar-menu" id="navegador-principal">
             <ul>
-                <li><a href="">Nuevos Ingresos</a></li>
+                <li><a href="#">Nuevos Ingresos</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="">Feria Online</a></li>
+                <li><a href="#">Feria Online</a></li>
             </ul>
         </nav>
         <div class="contenedor-encabezado">
@@ -68,9 +69,9 @@
             </span>
             <ul class="nav-encabezado-list" id="nav-a-mostrar">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="informacion.html">Información</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="medidas.html">Medidas</a></li>
+                <li><a href="#">Información</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#">Medidas</a></li>
             </ul>
         </nav>
     </header>
@@ -78,7 +79,7 @@
 
     <main>
         <form action="" class="formulario" id="formulario">
-		
+            
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
 				<div class="formulario__grupo-input">
@@ -129,13 +130,25 @@
 				</div>
 			</div>
 
-			<div class="formulario__grupo" id="grupo__terminos">
+			<div class="formulario__provincia">
+                <label for="provincia" class="formulario__label">Seleccione Su Provincia</label>
+                <select name="Provincia" id="provincia">
+                    <option value="bs-as">Bs-As</option>
+                    <option value="sgo-ester">Sgo. del Estero</option>
+                    <option value="tucuman">Tucuman</option>
+                    <option value="santafe">Santa Fe</option>
+                </select>
+            </div>
+            <div class="cargar-imagen">
+                <label for="imagen-perfil" class="formulario__label cargar-imagen__label">Cargar Foto de Perfil</label>
+                <input type="file" name = "imagen-perfil" class="cargar-imagen__input" id="imagen-perfil" >
+            </div>
+            <div class="formulario__grupo terminos__" id="grupo__terminos">
 				<label class="formulario__label">
 					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
 					<p class="terminos">Aceptas recibir nuestro Newsletter por mail?</p>
 				</label>
 			</div>
-
 			<div class="formulario__mensaje" id="formulario__mensaje">
 				<p> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
 			</div>
@@ -145,14 +158,6 @@
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 
-            <div class="trabaja_con_nosotros">
-                <form action="/api" method="post">
-                    <p class="subitucv">Trabajá con nosotros!</p>
-                    <label for="subitucv">Subí tu CV</label>
-                    <input id="file" name="file" type="file"/>
-                    <button class="btn-subida">Subir</button>
-                </form>
-            </div>
 
 		</form>
 	</main>
@@ -176,9 +181,11 @@
                         <li><a href="#">Preguntas</a></li>
                         <li><a href="#">Compras</a></li>
                     </ul>
+                    <ul id="contacto">
                         <h4>Contacto</h4>
                         <li class="contacto1">Dirección: Tacuari 320</li>
                         <li class="contacto2">Wpp: 1140256678</li>
+                    </ul>
                 </div>
     
                 <div class="footer-links">
@@ -206,13 +213,12 @@
     
     
             <!--LINEA LARGA QUE SEPARA-->
-            <hr>
+            <hr class="hr-footer">
             <div class="footer-text">
                 <p>Política de privacidad</p>
                 <p>Todos los derechos reservados</p>
             </div>
     </footer>
-
     <script src="../src/scripts/login.js"></script>
     <script src="../src/scripts/main.js"></script>
 </body>

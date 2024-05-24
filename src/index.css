@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -332,6 +333,7 @@ body{
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .title-tarjeta{
     font-size: 14px;
