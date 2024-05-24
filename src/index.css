@@ -9,11 +9,6 @@
 a{
     text-decoration: none;
 }
-footer{
-    width: 100%;
-    background-color: #ff6600;
-    padding: 500px;
-}
 body{
     background-image: url(https://media.istockphoto.com/id/836965294/es/foto/fondos-con-textura-de-tela-de-lino.jpg?s=612x612&w=0&k=20&c=qm7oTsge8G8LzBR1MlPLIc0F0iL4i2Wd0MqVyjfs92g=);
     top: 0;
@@ -30,6 +25,7 @@ body{
     color: white;
     animation: scroll 20s linear infinite;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 @keyframes scroll { 
@@ -88,7 +84,6 @@ body{
         background-color: rgb(12, 12, 12);
     }
 }
-/*Estilos para icono de iniciar Sesion*/
 
 /*Estilos para el carrito de compras*/
 .icon-trolley{
@@ -159,8 +154,6 @@ body{
 
     }
 }
-
-
 /*Estilos nav slider principal*/
 .nav-slider-principal{
     position: fixed;
@@ -226,7 +219,6 @@ body{
     align-items: center;
     background-color: black;     
 }
-
 .icon-nav-encabezado{
     color: white;
     font-weight: 200;
@@ -238,7 +230,6 @@ body{
         background-color: rgb(14, 14, 14);
     }
 }
-
 .nav-encabezado-list{
     overflow: hidden;
     list-style: none;
@@ -276,8 +267,6 @@ body{
 }
 /*Estilos del main principal*/
 .main-pagina-principal{
-    display: flex;
-    flex-direction: column;
     margin: 20px 20px;
     gap: 20px;
 }
@@ -296,25 +285,24 @@ body{
 }
 
 .title-section{
-    position: relative;
     text-align: center;
-    justify-content: center;
+}
+.title-section h2{
+    display: inline;
     font-size: bolder;
+    font-size: calc(12px + 0.9vw);
     font-weight: 300;
     background: rgb(255, 255, 255);
     border: 2px solid rgb(85, 68, 85);
     border-radius: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 40%;
-    width: 20vw;
-    margin-left: 39vw;
+    padding: 0 10px;
+    white-space: nowrap;
 }
 /*Estilos para las tarjetas*/
 
 .contenedor_tarjeta{
     width: 350px;
-    height: 600px;
+    height: 600px; 
     position: relative;
     background-color: rgb(251, 251, 251);
     transition: all .2s;
@@ -344,22 +332,18 @@ body{
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    overflow: visible;
-    word-wrap: normal;
 }
 .title-tarjeta{
     font-size: 14px;
     font-weight: 600;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 .decripcion-tarjeta{
     font-size: 13px;
     margin: 10px 0;
     width: 100%;
-    overflow: hidden;
-    /* white-space:normal; */
-    /* text-overflow: ellipsis; */
+    height: 36px;
+    text-overflow: ellipsis;
 }
 .oferta_tarjeta{
     font-size: 11px;
@@ -393,11 +377,13 @@ body{
     background-color: black;
     width: 100px;
     border-radius: 20px;
+    margin-top: 10px;
     &:hover{
         background-color: rgb(15, 15, 15);
     }
 }
 .btn-ver-mas{
+    color: black;
     font-size: 13px;
     transition: ease-in .2s;
     &:hover{
@@ -452,7 +438,6 @@ body{
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
 }
-
 @keyframes change {
     0% { background-image: url(./imgs/model_sombrero.png); }
     15% { background-image: url(./imgs/model_sombrero.png); }
