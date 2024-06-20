@@ -480,3 +480,24 @@ body{
     text-align: center;
     margin: 30vh 0;
 }
+
+.btn-admin{
+    position:absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    & a{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 200;
+        font-size: 10px;
+        & span{
+            font-weight: 200;
+            font-size: 20px;
+
+        }
+    }
+}
