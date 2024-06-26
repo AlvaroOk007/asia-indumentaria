@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/exindex.css">
+    <title>Listado</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-logo-center" id="logo">
+            
+            <h4>Asia</h4>
+            <h6>Indumentaria</h6>
+            <span>I N T R A N E T</span>
+            <br>
+            <span>  Listado  </span>
+        </div>
+    </header>
+    
+    <div class="logo-centrado">
+        <h1>Listado de Productos</h1>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>titulo</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Imágen</th>
+            </tr>
+        </thead>
+        <tbody id="tablaProductos"></tbody>
+    </table><br>
+
+    <div class="contendor-centrado">
+        <a href="exindex.html">Menú Principal</a>
+    </div>
+
+    <script>
+        const URL = "http://127.0.0.1:5000/"
+
+        //const URL = "https://USUARIO.pythonanywhere.com/"
+
+        // Solicitud GET al servidor para ver todos los prod
+        fetch(URL + 'productos')
+            .then(function(response) {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error ('Error al obtener los productos');
+                }
+            })
+
+            .then(function(data) {
+                let tablaProductos = document.getElementById('tablaProductos');
+                //(selecciona el elemento de DOM donde mostrará los productos)
+            for (let producto of data) {
+                let fila = document.createElement('tr');
+                fila.innerHTML = '<td>'+ producto.codigo + '</td>' +
+                    '<td>'+ producto.titulo + '</td>' +
+                    '<td>'+ producto.descripcion + '</td>' +
+                    '<td align="right">'+ producto.cantidad + '</td>' +
+                    '<td align="right">'+ producto.precio + '</td>' +
+                    '<td><img src="./src/imgs/'+ producto.imagen_url + '" alt="Imagen" style="width:100px;"></td>';
+
+        //Para subirlo al servidor, cambiar la ruta de la imagen por:
+        //www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/etc...
+        tablaProductos.appendChild(fila);
+    }
+})
+
+            .catch(function(error) {
+                alert('Error al obtener los productos');
+            });
+    </script>
+    
+</body>
+</html>
