@@ -177,7 +177,7 @@ def agregar_producto():
         imagen.save(os.path.join(RUTA_DESTINO, nombre_imagen))
 
         #Si el producto se agrega con éxito, se devuelve una respuesta JSON con un mensaje de éxito y un código de estado HTTP 201 (Creado).
-        return jsonify({"mensaje": "Producto agregado correctamente.", "codigo": nuevo_codigo, "imagen": nombre_imagen}), 201
+        return jsonify({"mensaje": "Producto agregado correctamente.", "codigo": nuevo_codigo, "titulo": titulo, "descripcion": descripcion, "precio": precio, "imagen": nombre_imagen}), 201
     else:
         #Si el producto no se puede agregar, se devuelve una respuesta JSON con un mensaje de error y un código de estado HTTP 500 (Internal Server Error).
         return jsonify({"mensaje": "Error al agregar el producto."}), 500
