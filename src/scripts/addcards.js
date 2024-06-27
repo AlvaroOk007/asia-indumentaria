@@ -22,7 +22,8 @@ if (response.ok) {
 })
 .then(function(data) {
 alert('Producto agregado correctamente');
-window.location.href = '/index.html';
+alert('Redireccionando a index.html');
+window.location.href = '../../index.html';
 
 })
 .catch(function(error) {
@@ -39,42 +40,3 @@ document.getElementById('imagenProducto').value = "";
 })
 
 })
-
-function cargarTarjetas() {
-    fetch(URL + 'productos', {
-        method: 'GET'
-    })
-    .then(response => response.json())
-    .then(productos => {
-        const contenedor = document.getElementById('tarjetas-container');
-        contenedor.innerHTML = ''; // Limpiar contenedor antes de agregar nuevos productos
-        productos.forEach(producto => {
-            agregarTarjeta(producto);
-        });
-    })
-    .catch(error => console.error('Error al cargar productos:', error));
-}
-
-function agregarTarjeta(producto) {
-    var contenedor = document.getElementById('tarjetas-container');
-    var tarjetaHTML = `
-        <article class="contenedor_tarjeta">
-            <div class="contenedor-imagen-tarjeta">
-                <img src="./src/imgs/${producto.imagen}" alt="Imagen representativa">
-            </div>
-            <div class="contenedor-descripcion-tarjeta">
-                <h2 class="title-tarjeta">${producto.titulo}</h2>
-                <p class="decripcion-tarjeta">${producto.descripcion}</p>
-                <span>${producto.precio} <span class="cuotas-tarjetas">en stock ${producto.cantidad}</span></span>
-            </div>
-            <div class="contenedor-btns-tarjeta">
-                <a href="" class="btn-tarjeta-comprar">Comprar</a>
-                <a href="" class="btn-ver-mas">Ver Mas</a>
-            </div>
-        </article>
-    `;
-    contenedor.insertAdjacentHTML('beforeend', tarjetaHTML);
-}
-
-// Cargar las tarjetas cuando se carga la página
-document.addEventListener('DOMContentLoaded', cargarTarjetas);

@@ -304,15 +304,26 @@ body{
 /*Estilos para las tarjetas*/
 
 .contenedor_tarjeta{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     width: 350px;
     height: 600px; 
     position: relative;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgb(251, 251, 251);
     transition: all .2s;
     &:hover{
         transform: scale(1.01);
         
     }
+}
+/*Pongo los contenedores uno al lado del otro*/
+#tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contenedor-imagen-tarjeta{
@@ -329,6 +340,12 @@ body{
             transform: scale(1.05);
         }
     }
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegúrate de que la imagen se ajusta correctamente */
 }
 
 .contenedor-descripcion-tarjeta{

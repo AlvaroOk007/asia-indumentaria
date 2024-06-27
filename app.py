@@ -12,6 +12,8 @@ import mysql.connector
 # Si es necesario, pip install Werkzeug
 from werkzeug.utils import secure_filename
 
+from flask import Flask, send_from_directory
+
 # No es necesario instalar, es parte del sistema standard de Python
 import os
 import time
@@ -19,7 +21,7 @@ import time
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/src', static_folder='src')
 CORS(app, resources={r"/*": {"origins": "*"}})  # Esto habilitará CORS para todas las rutas
 
 class Catalogo:
@@ -125,7 +127,9 @@ RUTA_DESTINO = './src/imgs/'
 #Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
 #RUTA_DESTINO = '/home/USUARIO/mysite/static/imagenes'
 
-
+@app.route('/src/imgs/<path:filename>')
+def send_image(filename):
+    return send_from_directory('src/imgs', filename)
 #--------------------------------------------------------------------
 # Listar todos los productos
 #--------------------------------------------------------------------
@@ -149,6 +153,11 @@ def mostrar_producto(codigo):
         return jsonify(producto), 201
     else:
         return "Producto no encontrado", 404
+    
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 
 #--------------------------------------------------------------------
