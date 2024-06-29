@@ -1,4 +1,6 @@
-const URL = "http://127.0.0.1:5000/"
+/*const URL = "http://127.0.0.1:5000/"*/
+const URL = "https://g4bynach0.pythonanywhere.com/"
+
 // Reemplazar el siguiente USUARIO por el usuario de Pythonanywhere LE SAQUE EL URL PORQUE DABA ERROR
 //const PEP = " https://USUARIO.pythonanywhere.com"  // PEPE y PEP eran URL
 

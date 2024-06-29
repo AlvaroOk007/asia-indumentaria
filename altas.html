@@ -15,9 +15,20 @@
                 <h6>Indumentaria</h6>
                 <span>I N T R A N E T</span>
                 <br>
-                <span>  Altas  </span>
+                <div class="menu-horiz-admin">
+                    <ul>
+                        <li><a href="index.html">Tienda</a></li>
+                        <li><a href="exindex.html">ABM</a></li>
+                        <li><a href="listado.html">Listado</a></li>
+                        <li><a href="modificaciones.html">Modificaciones</a></li>
+                        <li><a href="listadoEliminar.html">Bajas</a></li>
+                    </ul>
+
+                </div>
+                
         </div>
     </header>
+    <span><center>  Altas </center> </span>
     <form id="formulario" enctype="multipart/form-data">
         <label for="titulo">Título</label>
         <input type="text" id="titulo" name="titulo" required><br>
@@ -37,7 +48,7 @@
         <br><br>
         
         <button type="submit">Agregar Producto</button>
-        <a href="./exindex.html"> Volver al Menú</a>
+        <!--<a class="aABM" href="./exindex.html"> Volver al Menú</a>-->
     </form>
 
     <script src="./src/scripts/addcards.js"></script>

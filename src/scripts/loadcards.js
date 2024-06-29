@@ -12,8 +12,8 @@
     })
     .catch(error => console.error('Error al cargar productos:', error));
 }*/
-const URL = 'http://localhost:5000/';
-
+//const URL = 'http://localhost:5000/';
+const URL = 'https://g4bynach0.pythonanywhere.com/';
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch(URL + 'productos', {

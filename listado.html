@@ -15,12 +15,23 @@
             <h6>Indumentaria</h6>
             <span>I N T R A N E T</span>
             <br>
-            <span>  Listado  </span>
+            <div class="menu-horiz-admin">
+                <ul>
+                    <li><a href="index.html">Tienda</a></li>
+                    <li><a href="exindex.html">ABM</a></li>
+                    <li><a href="altas.html">Altas</a></li>
+                    <li><a href="modificaciones.html">Modificaciones</a></li>
+                    <li><a href="listadoEliminar.html">Bajas</a></li>
+                </ul>
+
+            </div>
+          
+           
         </div>
     </header>
-    
+     <span><center>  Listado de Productos </center> </span>
     <div class="logo-centrado">
-        <h1>Listado de Productos</h1>
+        
     </div>
     <table>
         <thead>
@@ -36,14 +47,14 @@
         <tbody id="tablaProductos"></tbody>
     </table><br>
 
-    <div class="contendor-centrado">
-        <a href="exindex.html">Menú Principal</a>
-    </div>
+    
 
     <script>
-        const URL = "http://127.0.0.1:5000/"
+        //const URL = "http://127.0.0.1:5000/"
 
         //const URL = "https://USUARIO.pythonanywhere.com/"
+
+        const URL = 'https://g4bynach0.pythonanywhere.com/';
 
         // Solicitud GET al servidor para ver todos los prod
         fetch(URL + 'productos')
@@ -65,7 +76,8 @@
                     '<td>'+ producto.descripcion + '</td>' +
                     '<td align="right">'+ producto.cantidad + '</td>' +
                     '<td align="right">'+ producto.precio + '</td>' +
-                    '<td><img src="./src/imgs/'+ producto.imagen_url + '" alt="Imagen" style="width:100px;"></td>';
+                    //'<td><img src="./src/imgs/'+ producto.imagen_url + '" alt="Imagen" style="width:100px;"></td>';
+                    '<td><img src=https://www.pythonanywhere.com/user/g4bynach0/files/home/g4bynach0/mysite/src/imgs/' + producto.imagen_url +' alt="Imagen del producto"style="width: 100px;"></td>' +
 
         //Para subirlo al servidor, cambiar la ruta de la imagen por:
         //www.pythonanywhere.com/user/USUARIO/files/home/USUARIO/mysite/etc...

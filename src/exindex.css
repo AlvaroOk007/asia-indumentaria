@@ -11,16 +11,18 @@ a{
     text-decoration: none;
 }
 body{
+   
     background-color: black;
     color: white;
 }
 
 
 .contenedor-centrado {
-    /*padding-left: 50vw;*/
+    padding-top: 1vh;
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: red;
 }
 
 .navbar-index{
@@ -40,9 +42,9 @@ body{
 }
 
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 30px;
+    max-width: 500px;
+    margin: 1em auto;
+    padding: 40px;
     background-color: gray;
     border-color: 1px solid silver;
     border-radius: 5px;
@@ -50,20 +52,22 @@ form {
 }
 
 #productos-table{
-    width: 40%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 1em auto;
     padding: 30px;
     background-color: gray;
     border-color: 1px solid silver;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 3 40%;
+    grid-template-columns: 6 40%;
     
 }
 
 table {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 600px;
+    width: 80%;
+    font-size: 0.8em;
+    margin: 1em auto;
     padding: 20px;
     background-color: gray;
     border: 1px solid lightslategray;
@@ -97,7 +101,7 @@ table {
     }
     & span{
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 200;
         color: white;
     }
@@ -156,13 +160,15 @@ table a {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    font-size: 85%;
-    font-weight: 800;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.25em;
 }
 
 a:hover {
     background-color: white;
     color: black
+    
 }
 
 h6 {
@@ -173,15 +179,24 @@ h6 {
 
 span {
     font-weight: bolder;
+
 }
 
 
 .contenedor-centrado{
+    
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;     
+}
+
+.contenedor-centrado a {
+    background-color:black;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
 }
 .icon-nav-encabezado{
     color: white;
@@ -219,6 +234,7 @@ span {
     text-decoration: none;
     color: white;
     font-weight: 200;
+    tex
     &:hover{
         text-decoration: underline;
     }
@@ -232,6 +248,7 @@ span {
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     overflow: hidden;
     text-overflow: ellipsis;
+    justify-content: center;
 }
 
 #productos-table td {
@@ -259,4 +276,87 @@ span {
 /* Evitar que el contenido se divida en múltiples líneas */
 #productos-table td {
     white-space: nowrap;
+}
+
+/*#formulario {
+   
+    align-items: center;
+    justify-content: center;
+  
+}*/
+
+.volver {
+    margin-top: 15px;
+    padding: 10px;    
+    text-align: center;
+    background-color: black;
+}
+.volver-a {
+    margin-top: 100px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.aABM {
+    color: white;
+    background-color: rgb(241, 13, 13);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion {
+    text-align: center;
+   
+}
+
+.cancelar {
+    padding: 6px;
+    margin:4px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 140px;
+}
+.menu-horiz-admin > ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+   
+}
+
+
+.menu-horiz-admin {
+    max-height: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-content: space-between;
+    color: white;
+    margin-left: 5px;
+    font-weight: 200;
+    background-color: beige;
+    border-radius: 5px;
+   
+}
+
+.menu-horiz-admin li a{
+    float: left;
+    padding-left: 10vw;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-weight: bold;
+}
+
+header {
+    padding-bottom: 2em;
 }

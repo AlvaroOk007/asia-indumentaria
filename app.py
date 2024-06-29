@@ -27,13 +27,13 @@ CORS(app, resources={r"/*": {"origins": "*"}})  # Esto habilitará CORS para tod
 class Catalogo:
     #----------------------------------------------------------------
     # Constructor de la clase
-    def __init__(self, host, user, password, database, port=3307):
+    def __init__(self, host, user, password, database):
         # Primero, establecemos una conexión sin especificar la base de datos
         self.conn = mysql.connector.connect(
             host=host,
             user=user,
-            password=password,
-            port=port
+            password=password
+            
         )
         self.cursor = self.conn.cursor()
 
@@ -120,9 +120,9 @@ class Catalogo:
         else:
             print("Producto no encontrado.")
 
-catalogo = Catalogo(host='localhost', user='root', password='1234', database='AsiaIndumentaria', port=3307)
-
-RUTA_DESTINO = './src/imgs/'
+#catalogo = Catalogo(host='localhost', user='root', password='', database='AsiaIndumentaria')
+catalogo = Catalogo(host='g4bynach0.mysql.pythonanywhere-services.com', user='g4bynach0', password='grupo13cac', database='miapp')
+RUTA_DESTINO = '/home/g4bynach0/mysite/src/imgs'
 
 #Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
 #RUTA_DESTINO = '/home/USUARIO/mysite/static/imagenes'

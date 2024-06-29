@@ -12,19 +12,29 @@
 <body>
     <header>
         <div class="contenedor-logo-center" id="logo">
-            <a href="../index.html">
                 <h4>Asia</h4>
                 <h6>Indumentaria</h6>
                 <span>I N T R A N E T</span>
                 <br>
-                <span> Bajas  </span>
-            </a>
+                <div class="menu-horiz-admin">
+                    <ul>
+                        <li><a href="index.html">Tienda</a></li>
+                        <li><a href="exindex.html">ABM</a></li>
+                        <li><a href="altas.html">Altas</a></li>
+                        <li><a href="listado.html">Listado</a></li>
+                        <li><a href="modificaciones.html">Modificaciones</a></li>
+                        
+                    </ul>
+    
+                </div>
+                
+            
     </div>
 
 
     </header>
-    <br>
-
+    <span><center>Bajas</center></span>        
+   
     <table id="productos-table"> <!-- Se crea una tabla para mostrar los productos. -->
         <thead> 
             <tr>
@@ -40,11 +50,12 @@
     </table><br>
 
     <div class="contenedor-centrado">
-        <a href="exindex.html">Menu principal</a>
+        <!--<a href="exindex.html">Menu principal</a>-->
     </div>
 
     <script>
-        const URL = "http://127.0.0.1:5000/"
+        //const URL = "http://127.0.0.1:5000/"
+        const URL = 'https://g4bynach0.pythonanywhere.com/';
 
         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
         //const URL = "https://USUARIO.pythonanywhere.com/"
