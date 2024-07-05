@@ -1,6 +1,6 @@
 #--------------------------------------------------------------------
 # Instalar con pip install Flask
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 #from flask import request
 
 # Instalar con pip install flask-cors
@@ -11,8 +11,6 @@ import mysql.connector
 
 # Si es necesario, pip install Werkzeug
 from werkzeug.utils import secure_filename
-
-from flask import Flask, send_from_directory
 
 # No es necesario instalar, es parte del sistema standard de Python
 import os
@@ -121,7 +119,7 @@ class Catalogo:
             print("Producto no encontrado.")
 
 #catalogo = Catalogo(host='localhost', user='root', password='', database='AsiaIndumentaria')
-catalogo = Catalogo(host='g4bynach0.mysql.pythonanywhere-services.com', user='g4bynach0', password='grupo13cac', database='miapp')
+catalogo = Catalogo(host='g4bynach0.mysql.pythonanywhere-services.com', user='g4bynach0', password='grupo13cac', database='g4bynach0$miapp')
 RUTA_DESTINO = '/home/g4bynach0/mysite/src/imgs'
 
 #Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere

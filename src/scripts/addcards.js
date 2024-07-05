@@ -8,9 +8,23 @@ const URL = "https://g4bynach0.pythonanywhere.com/"
 document.getElementById('formulario').addEventListener('submit', function(event) {
 event.preventDefault();
 var formData = new FormData(this);
-fetch(URL + 'productos',{
-method: 'POST',
-body: formData
+fetch('https://g4bynach0.pythonanywhere.com/productos', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ nombre: 'Producto Nuevo' })
+})
+.then(response => response.json())
+.then(data => {
+    console.log('Success:', data);
+})
+.catch((error) => {
+    console.error('Error:', error);
+});
+//fetch(URL + 'productos',{
+//method: 'POST',
+//body: formData
 })
 
 // Utilizamos el método then para manejar la respuesta del servidor
@@ -24,7 +38,6 @@ if (response.ok) {
 })
 .then(function(data) {
 alert('Producto agregado correctamente');
-alert('Redireccionando a index.html');
 window.location.href = '../../index.html';
 
 })
@@ -41,4 +54,3 @@ document.getElementById('precio').value = "";
 document.getElementById('imagenProducto').value = "";
 })
 
-})

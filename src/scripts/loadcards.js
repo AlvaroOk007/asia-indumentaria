@@ -16,9 +16,15 @@
 const URL = 'https://g4bynach0.pythonanywhere.com/';
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch(URL + 'productos', {
-        method: 'GET'
+    fetch('https://g4bynach0.pythonanywhere.com/productos', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
     })
+    //fetch(URL + 'productos', {
+        //method: 'GET'
+   // })
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
@@ -30,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contenedor.innerHTML = ''; // Limpiar contenedor antes de agregar nuevos productos
         productos.forEach(producto => {
             agregarTarjeta(producto);
+            console.log('Productos cargados:', productos);
         });
     })
     .catch(error => console.error('Error al cargar productos:', error));
