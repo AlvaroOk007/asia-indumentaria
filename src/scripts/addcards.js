@@ -13,10 +13,11 @@ document.getElementById('formulario').addEventListener('submit', function(event)
 
     fetch(URL + 'productos', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formDataObject)
+        //headers: {
+           //'Content-Type': 'application/json'
+        //},
+        //body: JSON.stringify(formDataObject)
+        body: formData
     })
     .then(response => {
         console.log(response);
