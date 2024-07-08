@@ -53,7 +53,7 @@ function agregarTarjeta(producto) {
     var tarjetaHTML = `
         <article class="contenedor_tarjeta">
             <div class="contenedor-imagen-tarjeta">
-                <img src="src/imgs/${producto.imagen_url}" alt="Imagen representativa" class="tarjeta-imagen">
+                <img src="https://g4bynach0.pythonanywhere.com/src/imgs/${producto.imagen_url}" alt="Imagen representativa" class="tarjeta-imagen">
             </div>
             <div class="contenedor-descripcion-tarjeta">
                 <h2 class="title-tarjeta">${producto.titulo}</h2>
